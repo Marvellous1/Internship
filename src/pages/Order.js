@@ -9,8 +9,8 @@ class Order extends Component {
     this.props.data &&
       items.map(
         (item) => (
-          (subtotal += item.price * item.quantity),
-          (totaltax += (item.tax_pct * item.price) / 100),
+          (subtotal += item.price * item.quantity)
+          (totaltax += (item.tax_pct * item.price) / 100)
           (total = subtotal + totaltax)
         )
       );
