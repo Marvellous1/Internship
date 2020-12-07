@@ -6,25 +6,23 @@ class Order extends Component {
     let subtotal = 0;
     let totaltax = 0;
     let total = 0;
-    this.props.data &&
+    items &&
       items.map(
         (item) => (
-          (subtotal += item.price * item.quantity)
-          (totaltax += (item.tax_pct * item.price) / 100)
+          (subtotal += item.price * item.quantity),
+          (totaltax += (item.tax_pct * item.price) / 100),
           (total = subtotal + totaltax)
         )
       );
-
     return (
       <div className="container page-bg">
-        {" "}
         {this.props.data && (
           <div className="row ">
             <div className="col-lg-8">
               <div className="card mb-4">
                 <div className="card-body">
                   <div className="h5 mb-3">Order History</div>
-                  <table class="table">
+                  <table className="table">
                     <thead>
                       <tr>
                         <th scope="col">S/N</th>

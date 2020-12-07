@@ -22,7 +22,11 @@ class App extends Component {
         this.setState({
           data: resp.data,
         });
-      });
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })    
   };
 
   render() {

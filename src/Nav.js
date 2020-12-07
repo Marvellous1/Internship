@@ -5,12 +5,12 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-light navbar-expand-md navbar-lg container py-3 mb-5">
-          <NavLink to="/" class="navbar-brad brand-logo">
+        <nav className="navbar navbar-light navbar-expand-md navbar-lg container py-3 mb-5">
+          <NavLink to="/" className="navbar-brad brand-logo">
             ZANA
           </NavLink>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavAltMarkup"
@@ -18,10 +18,10 @@ class Nav extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-            <ul class="navbar-nav ml-auto">
+          <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <ul className="navbar-nav ml-auto">
               <li className="nav-item mr-3">
                 <NavLink
                   to="/order"
